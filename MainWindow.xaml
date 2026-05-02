@@ -1,0 +1,19 @@
+﻿<Window x:Class="ClientAsync.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientAsync"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="44,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="102"><Run Language="uk-ua" Text="Цитата:" FontSize="16"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="219,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="539" Height="145" FontSize="16" x:Name="Response"/>
+        <Button Content="Отримати цитату" HorizontalAlignment="Left" Margin="44,318,0,0" VerticalAlignment="Top" Height="52" Width="102" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="142"><Run Language="uk-ua" Text="Введіть логін і пароль(логін:пароль):" FontSize="16"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="219,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="539" Height="45" FontSize="16" x:Name="Password"/>
+        <Button Content="Авторизуватись" HorizontalAlignment="Left" Margin="44,130,0,0" VerticalAlignment="Top" Height="52" Width="102" Click="Authorization"/>
+        <TextBox HorizontalAlignment="Left" Margin="239,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Height="29" FontSize="16"/>
+
+    </Grid>
+</Window>
