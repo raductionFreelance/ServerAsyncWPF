@@ -1,0 +1,28 @@
+﻿<Window x:Class="ChatServerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatServerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="ChatModeComboBox" 
+              HorizontalAlignment="Left" 
+              Margin="207,72,0,0" 
+              VerticalAlignment="Top" 
+              Width="120" 
+              SelectedIndex="0"
+              SelectionChanged="ChatModeComboBox_SelectionChanged">
+            <ComboBoxItem Content="Людина"/>
+            <ComboBoxItem Content="Робот"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="40,67,0,0" TextWrapping="Wrap" Text="Виберіть режим чату: " VerticalAlignment="Top" Height="24" Width="128" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="201" FontSize="16"><Run Language="uk-ua" Text="Введіть порт сервера"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Margin="241,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="34" FontSize="16"  x:Name="PortInput"/>
+        <TextBox HorizontalAlignment="Left" Margin="40,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" Height="241" FontSize="16" x:Name="ChatDisplay"/>
+        <Button Content="Запустити сервер" HorizontalAlignment="Left" Margin="539,72,0,0" VerticalAlignment="Top" Height="36" Width="160" Click="Button_Click"/>
+        <Button Content="Надіслати повідомлення" HorizontalAlignment="Left" Margin="539,183,0,0" VerticalAlignment="Top" Height="36" Width="160" Click="Button_Click"/>
+
+    </Grid>
+</Window>
